@@ -9,7 +9,9 @@ describe("Routes", () => {
   it("should be render Search screen when not city selecte", async () => {
     render(<Routes />);
 
-    const title = await waitFor(() => screen.findByText(/^escolha um local/i));
+    const title = await waitFor(() =>
+      screen.findByText(/^look up a location to view/i)
+    );
 
     expect(title).toBeTruthy();
   });

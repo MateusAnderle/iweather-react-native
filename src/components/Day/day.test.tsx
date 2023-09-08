@@ -5,14 +5,14 @@ import clearDay from "@assets/clear_day.svg";
 
 describe("Component: Day", () => {
   it("should be render day", () => {
-    const { debug } = render(
+    render(
       <Day
         data={{
           day: "18/07",
           min: "30°c",
           max: "34°c",
           icon: clearDay,
-          weather: "Céu limpo",
+          weather: "Clear sky",
         }}
       />
     );

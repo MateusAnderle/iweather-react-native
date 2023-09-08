@@ -5,9 +5,9 @@ import dropIcon from "@assets/drop.svg";
 
 describe("Component: WeatherItem", () => {
   it("should be render show title and value", () => {
-    render(<WeatherItem icon={dropIcon} title="Umidade do ar" value="81%" />);
+    render(<WeatherItem icon={dropIcon} title="Humidity level" value="81%" />);
 
-    const title = screen.getByText("Umidade do ar");
+    const title = screen.getByText("Humidity level");
     const value = screen.getByText("81%");
 
     expect(title).toBeTruthy();
